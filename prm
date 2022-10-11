@@ -1,0 +1,77 @@
+&PARAMETERS
+
+caseid ='2048x2048x74_5km_12s_300K'
+
+nrestart = 1,
+
+dt = 12.,
+dx = 5000.
+dy = 5000.
+
+day0=0.0,
+
+nstop    = 576000,
+nelapse = 7200,
+nprint   = 300,
+nstat    = 300,
+nstatfrq = 15,
+
+restart_sep = .false.,
+output_sep = .false.,
+nrestart_skip = 5,
+
+CEM = .true.,
+
+dofplane = .false.
+docoriolis = .true.,
+
+doseasons = .false.,
+nrad = 30,
+doperpetual = .true.,
+dosolarconstant = .true.,
+solar_constant = 551.58,
+zenith_angle = 42.05,
+
+OCEAN = .true.,
+tabs_s = 300.,
+
+nxco2 = 1.,
+dosgs           = .true.,
+dodamping       = .true.,
+doupperbound    = .false.,
+docloud         = .true.,
+doprecip        = .true.,
+dolongwave      = .true.,
+doshortwave     = .true.,
+dosurface       = .true.,
+dolargescale    = .false.,
+doradforcing    = .false.,
+dosfcforcing    = .false.,
+donudging_uv    = .false.,
+donudging_tq    = .false.,
+
+tauls = 7200.,
+
+SFC_FLX_FXD    = .false.,
+SFC_TAU_FXD    = .false.,
+
+doisccp = .false.,
+
+doSAMconditionals = .true.
+dosatupdnconditionals = .true.
+
+nsave2D = 300,
+nsave2Dstart    = 0,
+nsave2Dend      = 999999999,
+save2Dsep = .false.
+save2Davg = .true.
+
+nsave3D = 1800,
+nsave3Dstart    = 0,
+!nsave3Dstart  = 0,
+nsave3Dend      = 999999999,
+save3Dbin      = .false.
+
+/
+
+
